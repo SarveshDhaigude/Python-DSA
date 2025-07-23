@@ -1,1 +1,9 @@
-Second code in Python-DSA of Bubble-Sorting that is arranging the given data in sorted manner means in ascending to descending order in number system
+Den=[10,45,67,98,2,1,8,55,35,78,25]
+temp=0
+for  k in range(len(Den)):
+    for j in range(k+1,len(Den)):
+            if(Den[k]>Den[j]):
+                temp=Den[k]
+                Den[k]=Den[j]
+                Den[j]=temp
+print(Den)
